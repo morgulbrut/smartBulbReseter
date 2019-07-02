@@ -49,6 +49,12 @@ void parse_SMS(String keyword) {
     resetGEpost28();
     colorWipe(strip.Color(0, 0, 0), 50);
   }
+  if (keyword.substring(0) == "on") {
+    ON(0);
+  }
+  if (keyword.substring(0) == "off") {
+    OFF(0);
+  }
 }
 
 
